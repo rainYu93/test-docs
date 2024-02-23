@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>企业风险集成接口文档 | Zm 文档平台</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/img/logo.png">
+    <meta name="description" content="Zm 文档平台">
+    
+    <link rel="preload" href="/assets/css/0.styles.26744f85.css" as="style"><link rel="preload" href="/assets/js/app.6924542f.js" as="script"><link rel="preload" href="/assets/js/3.7bf0d92c.js" as="script"><link rel="preload" href="/assets/js/77.3971c14f.js" as="script"><link rel="prefetch" href="/assets/js/1.26551e30.js"><link rel="prefetch" href="/assets/js/10.6509c590.js"><link rel="prefetch" href="/assets/js/11.d460cf9a.js"><link rel="prefetch" href="/assets/js/12.662e8ef6.js"><link rel="prefetch" href="/assets/js/13.cd73b730.js"><link rel="prefetch" href="/assets/js/14.83e53818.js"><link rel="prefetch" href="/assets/js/15.66ab1143.js"><link rel="prefetch" href="/assets/js/16.0c4ce5d5.js"><link rel="prefetch" href="/assets/js/17.2dc2ec8f.js"><link rel="prefetch" href="/assets/js/18.e2c3dc5b.js"><link rel="prefetch" href="/assets/js/19.807b2ad0.js"><link rel="prefetch" href="/assets/js/20.f36a91b4.js"><link rel="prefetch" href="/assets/js/21.6ed7a10b.js"><link rel="prefetch" href="/assets/js/22.9e51e98c.js"><link rel="prefetch" href="/assets/js/23.14dc9ad6.js"><link rel="prefetch" href="/assets/js/24.385adb19.js"><link rel="prefetch" href="/assets/js/25.7e2568ad.js"><link rel="prefetch" href="/assets/js/26.a9c5ec10.js"><link rel="prefetch" href="/assets/js/27.aeaef0da.js"><link rel="prefetch" href="/assets/js/28.d47b00c9.js"><link rel="prefetch" href="/assets/js/29.2281caf7.js"><link rel="prefetch" href="/assets/js/30.c40f0566.js"><link rel="prefetch" href="/assets/js/31.89d4ab17.js"><link rel="prefetch" href="/assets/js/32.d321c5c3.js"><link rel="prefetch" href="/assets/js/33.da202170.js"><link rel="prefetch" href="/assets/js/34.0bf834d3.js"><link rel="prefetch" href="/assets/js/35.b3b60cdd.js"><link rel="prefetch" href="/assets/js/36.92521d63.js"><link rel="prefetch" href="/assets/js/37.3aa283f9.js"><link rel="prefetch" href="/assets/js/38.5165a78d.js"><link rel="prefetch" href="/assets/js/39.5ec86ce2.js"><link rel="prefetch" href="/assets/js/4.fe18abb7.js"><link rel="prefetch" href="/assets/js/40.aefe5bb4.js"><link rel="prefetch" href="/assets/js/41.37a55e68.js"><link rel="prefetch" href="/assets/js/42.38918075.js"><link rel="prefetch" href="/assets/js/43.37fd3795.js"><link rel="prefetch" href="/assets/js/44.65e4bf92.js"><link rel="prefetch" href="/assets/js/45.4ac4d740.js"><link rel="prefetch" href="/assets/js/46.1ebc2aca.js"><link rel="prefetch" href="/assets/js/47.56687fc1.js"><link rel="prefetch" href="/assets/js/48.6a3c1912.js"><link rel="prefetch" href="/assets/js/49.5f12b939.js"><link rel="prefetch" href="/assets/js/5.2de0745c.js"><link rel="prefetch" href="/assets/js/50.23a3a508.js"><link rel="prefetch" href="/assets/js/51.e95ba195.js"><link rel="prefetch" href="/assets/js/52.c31af605.js"><link rel="prefetch" href="/assets/js/53.91e9fdfd.js"><link rel="prefetch" href="/assets/js/54.1c2d4afa.js"><link rel="prefetch" href="/assets/js/55.3527c169.js"><link rel="prefetch" href="/assets/js/56.68548774.js"><link rel="prefetch" href="/assets/js/57.7ac0eea2.js"><link rel="prefetch" href="/assets/js/58.a8fc5e2b.js"><link rel="prefetch" href="/assets/js/59.5062aa2c.js"><link rel="prefetch" href="/assets/js/6.e8afe11e.js"><link rel="prefetch" href="/assets/js/60.bc6bc14e.js"><link rel="prefetch" href="/assets/js/61.65a34ef0.js"><link rel="prefetch" href="/assets/js/62.a820411a.js"><link rel="prefetch" href="/assets/js/63.f18e1c65.js"><link rel="prefetch" href="/assets/js/64.8cad70a4.js"><link rel="prefetch" href="/assets/js/65.b54b1414.js"><link rel="prefetch" href="/assets/js/66.faa2fe89.js"><link rel="prefetch" href="/assets/js/67.f571ca08.js"><link rel="prefetch" href="/assets/js/68.d374ddbf.js"><link rel="prefetch" href="/assets/js/69.af62febd.js"><link rel="prefetch" href="/assets/js/7.b684eda7.js"><link rel="prefetch" href="/assets/js/70.25be1847.js"><link rel="prefetch" href="/assets/js/71.bff28eee.js"><link rel="prefetch" href="/assets/js/72.1dbb9ba5.js"><link rel="prefetch" href="/assets/js/73.92c952fb.js"><link rel="prefetch" href="/assets/js/74.ac26d5c8.js"><link rel="prefetch" href="/assets/js/75.c25e839b.js"><link rel="prefetch" href="/assets/js/76.3f2d885b.js"><link rel="prefetch" href="/assets/js/78.6abf9c0c.js"><link rel="prefetch" href="/assets/js/79.8e46bdb0.js"><link rel="prefetch" href="/assets/js/8.446c44f3.js"><link rel="prefetch" href="/assets/js/80.231cac37.js"><link rel="prefetch" href="/assets/js/81.3d352403.js"><link rel="prefetch" href="/assets/js/82.d0baf1d8.js"><link rel="prefetch" href="/assets/js/83.71a5a96b.js"><link rel="prefetch" href="/assets/js/84.0207643f.js"><link rel="prefetch" href="/assets/js/85.3166331f.js"><link rel="prefetch" href="/assets/js/9.f2b702b5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26744f85.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="Zm 文档平台" class="logo"> <span class="site-name can-hide">Zm 文档平台</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/course/applicationDevelop.html" class="nav-link">
+  教程
+</a></div><div class="nav-item"><a href="/document/documentLink.html" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/component/Login.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/version/v2.1.html" class="nav-link">
+  版本更新
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/epRisk.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/en/" class="nav-link">
+  en-US
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/course/applicationDevelop.html" class="nav-link">
+  教程
+</a></div><div class="nav-item"><a href="/document/documentLink.html" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/component/Login.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/version/v2.1.html" class="nav-link">
+  版本更新
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/epRisk.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/en/" class="nav-link">
+  en-US
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/document/documentLink.html" class="sidebar-link">文档指引</a></li><li><a href="/document/messageJumpDoc.html" class="sidebar-link">三方平台消息跳转配置</a></li><li><a href="/document/internationalizationDoc.html" class="sidebar-link">移动端国际化改造</a></li><li><a href="/document/unlinkIntegration.html" class="sidebar-link">移动端界面嵌入三方系统【短链接模式】</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="企业风险集成接口文档"><a href="#企业风险集成接口文档" class="header-anchor">#</a> 企业风险集成接口文档</h1> <h2 id="_1、获取风险扫描url"><a href="#_1、获取风险扫描url" class="header-anchor">#</a> 1、获取风险扫描url</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>InterfaceResponse<span class="token operator">&lt;</span>String<span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#getRiskScanUrl</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填（启信宝不关注，企查查、斯瑞得需要)</td></tr> <tr><td>├─  moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  riskCodeList</td> <td>Array</td> <td>风险项编码集合，枚举类型（Constants.EpRiskCode），必填（启信宝需要，企查查、斯瑞得不关注)</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>错误编码</td></tr> <tr><td>msg</td> <td>String</td> <td>错误消息</td></tr> <tr><td>data</td> <td>String</td> <td>扫描页面url， 下游对接不同的征信平台，集成页面地址不同</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;:true,
+    &quot;code&quot;:&quot;00000&quot;,
+    &quot;msg&quot;:&quot;操作成功&quot;,
+    &quot;partnerCode&quot;:null,
+    &quot;serviceCode&quot;:null,
+    &quot;data&quot;:&quot;https://www.baidu.com?passport=fe4e343dff144b64b8f7584c34fe722d&quot;
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_2、司法风险-立案信息"><a href="#_2、司法风险-立案信息" class="header-anchor">#</a> 2、司法风险-立案信息</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：珠海华发投资发展有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.EP_RISK_CASE_DETAIL_LIST</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><p><strong>返回字段说明：</strong></p> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdHearingDate</td> <td>String</td> <td>开庭日期</td></tr> <tr><td>├─ stdStartDate</td> <td>String</td> <td>立案时间</td></tr> <tr><td>├─ stdAssistant</td> <td>String</td> <td>助理法官</td></tr> <tr><td>├─ stdCaseCause</td> <td>String</td> <td>案由</td></tr> <tr><td>├─ stdCaseStatus</td> <td>String</td> <td>案件状态</td></tr> <tr><td>├─ stdCaseNo</td> <td>String</td> <td>案号</td></tr> <tr><td>├─ stdEndDate</td> <td>String</td> <td>结束时间</td></tr> <tr><td>├─ stdAgent</td> <td>String</td> <td>承办人</td></tr> <tr><td>├─ stdCaseId</td> <td>String</td> <td>立案id</td></tr> <tr><td>├─ stdCourt</td> <td>String</td> <td>法院</td></tr> <tr><td>├─ stdRolePlaintiff</td> <td>String</td> <td>上诉人，原告</td></tr> <tr><td>├─ stdRoleDefendant</td> <td>String</td> <td>被上诉人，被告</td></tr> <tr><td>├─ stdRoleOther</td> <td>String</td> <td>其他</td></tr></tbody></table></li> <li><p><strong>返回示例：</strong></p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;:true,
+    &quot;code&quot;:&quot;00000&quot;,
+    &quot;msg&quot;:&quot;操作成功&quot;,
+    &quot;partnerCode&quot;:null,
+    &quot;serviceCode&quot;:null,
+    &quot;data&quot;:{
+        &quot;total&quot;:2,
+        &quot;num&quot;:2,
+        &quot;items&quot;:[
+            {
+                &quot;stdHearingDate&quot;:&quot;-&quot;,
+                &quot;stdStartDate&quot;:&quot;2017-11-17&quot;,
+                &quot;stdAssistant&quot;:&quot;-&quot;,
+                &quot;stdCaseCause&quot;:&quot;合同纠纷&quot;,
+                &quot;stdCaseStatus&quot;:&quot;已结案&quot;,
+                &quot;stdCaseNo&quot;:&quot;（2017）粤04民终3076号&quot;,
+                &quot;stdEndDate&quot;:&quot;-&quot;,
+                &quot;stdAgent&quot;:&quot;-&quot;,
+                &quot;stdCaseId&quot;:&quot;5fbc8fa53269aa2fbf84679c&quot;,
+                &quot;stdCourt&quot;:&quot;珠海市中级人民法院&quot;,
+                &quot;stdRolePlaintiff&quot;:&quot;S某某&quot;,
+                &quot;stdRoleDefendant&quot;:&quot;S某某;S某某;S某某;S某某&quot;,
+                &quot;stdRoleOther&quot;:&quot;中国工商银行股份有限公司珠海莲花支行;珠海华发投资发展有限公司&quot;
+            },
+            {
+                &quot;stdHearingDate&quot;:&quot;-&quot;,
+                &quot;stdStartDate&quot;:&quot;2014-03-12&quot;,
+                &quot;stdAssistant&quot;:&quot;-&quot;,
+                &quot;stdCaseCause&quot;:&quot;房屋租赁合同纠纷&quot;,
+                &quot;stdCaseStatus&quot;:&quot;已结案&quot;,
+                &quot;stdCaseNo&quot;:&quot;（2014）珠香法民三初字第392号&quot;,
+                &quot;stdEndDate&quot;:&quot;-&quot;,
+                &quot;stdAgent&quot;:&quot;-&quot;,
+                &quot;stdCaseId&quot;:&quot;5fbbd492e2026e437bcf5650&quot;,
+                &quot;stdCourt&quot;:&quot;珠海市香洲区人民法院&quot;,
+                &quot;stdRolePlaintiff&quot;:&quot;中国农业银行股份有限公司珠海分行&quot;,
+                &quot;stdRoleDefendant&quot;:&quot;珠海市派拉蒙物业代理有限公司;珠海华发投资发展有限公司&quot;,
+                &quot;stdRoleOther&quot;:null
+            }
+	]
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><h2 id="_3、司法风险-开庭公告"><a href="#_3、司法风险-开庭公告" class="header-anchor">#</a> 3、司法风险-开庭公告</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：珠海华发投资发展有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_COURT_NOTICE</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><p><strong>返回字段说明：</strong></p> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdDefendant</td> <td>String</td> <td>被告</td></tr> <tr><td>├─ stdPlaintiff</td> <td>String</td> <td>原告</td></tr> <tr><td>├─ stdPureRole</td> <td>String</td> <td>当事人身份</td></tr> <tr><td>├─ stdDepartment</td> <td>String</td> <td>承办部门</td></tr> <tr><td>├─ stdCourt</td> <td>String</td> <td>法庭</td></tr> <tr><td>├─ stdCaseNo</td> <td>String</td> <td>案号</td></tr> <tr><td>├─ stdJudge</td> <td>String</td> <td>审判长/主审人</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>0：当前公示信息；1：历史公示信息</td></tr> <tr><td>├─ stdCaseReason</td> <td>String</td> <td>案由</td></tr> <tr><td>├─ stdHearingDate</td> <td>String</td> <td>开庭日期</td></tr> <tr><td>├─ stdRelatedCompanies</td> <td>Array</td> <td>当事人</td></tr> <tr><td>├─ stdRole</td> <td>String</td> <td>角色</td></tr> <tr><td>├─ stdItem</td> <td>String</td> <td>其他</td></tr> <tr><td>├─ stdName</td> <td>String</td> <td>名称</td></tr> <tr><td>├─ stdType</td> <td>String</td> <td>类型（E：企业；P：个人</td></tr> <tr><td>├─ stdPureRole</td> <td>String</td> <td>身份</td></tr></tbody></table></li> <li><p><strong>返回示例：</strong></p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;success&quot;:true,
+    &quot;code&quot;:&quot;00000&quot;,
+    &quot;msg&quot;:&quot;操作成功&quot;,
+    &quot;partnerCode&quot;:null,
+    &quot;serviceCode&quot;:null,
+    &quot;data&quot;:{
+        &quot;total&quot;:3,
+        &quot;num&quot;:3,
+        &quot;items&quot;:[
+            {
+                &quot;stdDefendant&quot;:&quot;S某某 S某某 S某某&quot;,
+                &quot;stdPlaintiff&quot;:&quot;S某某&quot;,
+                &quot;stdPureRole&quot;:&quot;第三人&quot;,
+                &quot;stdDepartment&quot;:&quot;-&quot;,
+                &quot;stdCourt&quot;:&quot;珠海市中级人民法院第二十二审判庭&quot;,
+                &quot;stdCaseNo&quot;:&quot;（2017）粤04民终3076号&quot;,
+                &quot;stdJudge&quot;:&quot;T某某&quot;,
+                &quot;stdDisabled&quot;:&quot;0&quot;,
+                &quot;stdCaseReason&quot;:&quot;合同纠纷&quot;,
+                &quot;stdHearingDate&quot;:&quot;2017-12-26 15:00:00&quot;,
+                &quot;stdRelatedCompanies&quot;:[
+                    {
+                        &quot;stdRole&quot;:&quot;上诉人&quot;,
+                        &quot;stdItem&quot;:&quot;&quot;,
+                        &quot;stdName&quot;:&quot;S某某&quot;,
+                        &quot;stdType&quot;:&quot;P&quot;,
+                        &quot;stdPureRole&quot;:&quot;上诉人&quot;
+                    },
+                    {
+                        &quot;stdRole&quot;:&quot;被上诉人&quot;,
+                        &quot;stdItem&quot;:&quot;&quot;,
+                        &quot;stdName&quot;:&quot;S某某&quot;,
+                        &quot;stdType&quot;:&quot;P&quot;,
+                        &quot;stdPureRole&quot;:&quot;被上诉人&quot;
+                    },
+                    {
+                        &quot;stdRole&quot;:&quot;被上诉人&quot;,
+                        &quot;stdItem&quot;:&quot;&quot;,
+                        &quot;stdName&quot;:&quot;S某某&quot;,
+                        &quot;stdType&quot;:&quot;P&quot;,
+                        &quot;stdPureRole&quot;:&quot;被上诉人&quot;
+                    },
+                    {
+                        &quot;stdRole&quot;:&quot;被上诉人&quot;,
+                        &quot;stdItem&quot;:&quot;&quot;,
+                        &quot;stdName&quot;:&quot;S某某&quot;,
+                        &quot;stdType&quot;:&quot;P&quot;,
+                        &quot;stdPureRole&quot;:&quot;被上诉人&quot;
+                    },
+                    {
+                        &quot;stdRole&quot;:&quot;原审第三人&quot;,
+                        &quot;stdItem&quot;:&quot;5fb2e539-3008-474e-8539-3005698681af&quot;,
+                        &quot;stdName&quot;:&quot;中国工商银行股份有限公司珠海莲花支行&quot;,
+                        &quot;stdType&quot;:&quot;E&quot;,
+                        &quot;stdPureRole&quot;:&quot;第三人&quot;
+                    },
+                    {
+                        &quot;stdRole&quot;:&quot;原审第三人&quot;,
+                        &quot;stdItem&quot;:&quot;22b2992c-5a0e-4d46-8b27-cfa9b1a63c00&quot;,
+                        &quot;stdName&quot;:&quot;珠海华发投资发展有限公司&quot;,
+                        &quot;stdType&quot;:&quot;E&quot;,
+                        &quot;stdPureRole&quot;:&quot;第三人&quot;
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br></div></div><h2 id="_4、司法风险-终本案件"><a href="#_4、司法风险-终本案件" class="header-anchor">#</a> 4、司法风险-终本案件</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：乐视控股（北京）有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_TERMINATION_CASE</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdTerminateDate</td> <td>String</td> <td>终本日期</td></tr> <tr><td>├─ stdAmount</td> <td>String</td> <td>执行标的</td></tr> <tr><td>├─ stdName</td> <td>String</td> <td>企业名称</td></tr> <tr><td>├─ stdCourt</td> <td>String</td> <td>执行法院</td></tr> <tr><td>├─ stdCardNum</td> <td>String</td> <td>组织机构号</td></tr> <tr><td>├─ stdCaseNoOrigin</td> <td>String</td> <td>执行依据案号</td></tr> <tr><td>├─ stdCaseNoTerminal</td> <td>String</td> <td>执行案号</td></tr> <tr><td>├─ stdFilingDate</td> <td>String</td> <td>立案日期</td></tr> <tr><td>├─ stdFailPerformAmount</td> <td>String</td> <td>未履行金额</td></tr> <tr><td>├─ stdStatus</td> <td>String</td> <td>状态，0：未知；1：已履行；2：未履行；3：部分未履行</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>是否历史，0：否；1：是</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 250,
+    &quot;items&quot;: [
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-12-30&quot;,
+        &quot;stdAmount&quot;: &quot;4865359&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京01执1656号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-12-05&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;4865359&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-12-27&quot;,
+        &quot;stdAmount&quot;: &quot;1460000&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市高级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京执35号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-07-28&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;1460000&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-12-18&quot;,
+        &quot;stdAmount&quot;: &quot;155980527&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;山西省临汾市中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;9111010558****4383&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）晋10执207号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-11-03&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;155864687&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-10-31&quot;,
+        &quot;stdAmount&quot;: &quot;1344174&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2019）京73民初214号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京01执833号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-07-05&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;165837&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-10-26&quot;,
+        &quot;stdAmount&quot;: &quot;2612704&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市高级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京执52号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-07-28&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;2612704&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-10-20&quot;,
+        &quot;stdAmount&quot;: &quot;600000&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市高级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京执88号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-07-28&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;600000&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-10-10&quot;,
+        &quot;stdAmount&quot;: &quot;924188&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2020）京73民初524号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京01执1062号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-08-23&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;911275&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-06-25&quot;,
+        &quot;stdAmount&quot;: &quot;5610811&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;58255643-8&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京0105执16679号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-04-24&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;5610811&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-06-16&quot;,
+        &quot;stdAmount&quot;: &quot;1681256&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;广东省深圳市中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;9111010558****4383&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2022）粤03执3148号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2022-05-24&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;1681256&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-04-23&quot;,
+        &quot;stdAmount&quot;: &quot;61740908&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2021）京03民初2058号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京03执235号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-02-08&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;61740908&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-04-07&quot;,
+        &quot;stdAmount&quot;: &quot;12497223&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2022）京03执1057号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2022-08-04&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;12577121&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-02-27&quot;,
+        &quot;stdAmount&quot;: &quot;93175&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2020）京73民初655号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京01执252号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-02-14&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;93175&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-02-27&quot;,
+        &quot;stdAmount&quot;: &quot;14150&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2020）京73民初653号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京01执249号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-02-14&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;14150&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-02-27&quot;,
+        &quot;stdAmount&quot;: &quot;150446&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2020）京73民初656号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京01执251号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-02-14&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;150446&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-02-27&quot;,
+        &quot;stdAmount&quot;: &quot;216646&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2021）京73民初442号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京01执250号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-02-14&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;216646&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-02-27&quot;,
+        &quot;stdAmount&quot;: &quot;41078&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2020）京73民初651号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2023）京01执237号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2023-02-13&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;41078&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-02-27&quot;,
+        &quot;stdAmount&quot;: &quot;190000&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;58255643-8&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2020）京0105民初2507号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2022）京0105执39199号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2022-11-17&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;190000&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2023-01-06&quot;,
+        &quot;stdAmount&quot;: &quot;456072775&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;广东省深圳市中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;9111010558****4383&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;（2018）粤民初125号&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2021）粤03执7418号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2021-09-14&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;456072775&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2022-12-30&quot;,
+        &quot;stdAmount&quot;: &quot;148073501&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2022）京03执766号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2022-06-09&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;147966909&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdTerminateDate&quot;: &quot;2022-12-08&quot;,
+        &quot;stdAmount&quot;: &quot;6428994&quot;,
+        &quot;stdName&quot;: &quot;乐视控股（北京）有限公司&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdCardNum&quot;: &quot;582556438&quot;,
+        &quot;stdCaseNoOrigin&quot;: &quot;-&quot;,
+        &quot;stdCaseNoTerminal&quot;: &quot;（2022）京03执1316号&quot;,
+        &quot;stdFilingDate&quot;: &quot;2022-09-23&quot;,
+        &quot;stdFailPerformAmount&quot;: &quot;6428994&quot;,
+        &quot;stdStatus&quot;: 2,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br></div></div><h2 id="_5、司法风险-法院公告"><a href="#_5、司法风险-法院公告" class="header-anchor">#</a> 5、司法风险-法院公告</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：乐视控股（北京）有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_NOTICE_LIST</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdCourt</td> <td>String</td> <td>法院</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>0：当前公示信息；1：历史公示信息</td></tr> <tr><td>├─ stdContent</td> <td>String</td> <td>内容</td></tr> <tr><td>├─ stdDate</td> <td>String</td> <td>发布日期</td></tr> <tr><td>├─ stdPerson</td> <td>String</td> <td>当事人</td></tr> <tr><td>├─ stdType</td> <td>String</td> <td>公告类型</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 61,
+    &quot;num&quot;: 20,
+    &quot;items&quot;: [
+      {
+        &quot;stdCourt&quot;: &quot;上海市闵行区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视品牌营销策划（北京）有限公司、乐视控股（北京）有限公司:\r\n  本院在执行申请执行人新好耶数字技术（上海）有限公司与被执行人乐视品牌营销策划（北京）有限公司广告合同纠纷一案中,申请执行人申请追加被执行人乐视品牌营销策划（北京）有限公司股东暨被申请人乐视控股（北京）有限公司为被执行人,现因你们下落不明,依照《中华人民共和国民事诉讼法》第九十五条之规定,向你们公告送达申请书副本及听证传票。自本公告发出之日起,经过30日,即视为送达。本院定于2024年2月28日14时30分在上海市闵行区人民法院（雅致路99号）第二十四法庭公开进行听证,传唤你们届时准时到庭,逾期不到,本院将进行缺席审查。特此公告。&quot;,
+        &quot;stdDate&quot;: &quot;2024-01-18&quot;,
+        &quot;stdPerson&quot;: &quot;乐视品牌营销策划(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本及开庭传票&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;闵行区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;（2024）沪0112执异27号\n乐视品牌营销策划（北京）有限公司、乐视控股（北京）有限公司:本院在执行申请执行人新好耶数字技术（上海）有限公司与被执行人乐视品牌营销策划（北京）有限公司广告合同纠纷一案中,申请执行人申请追加被执行人乐视品牌营销策划（北京）有限公司股东暨被申请人乐视控股（北京）有限公司为被执行人,现因你们下落不明,依照《中华人民共和国民事诉讼法》第九十五条之规定,向你们公告送达申请书副本及听证传票。自本公告发出之日起,经过30日,即视为送达。本院定于2024年2月28日14时30分在上海市闵行区人民法院（雅致路99号）第二十四法庭公开进行听证,传唤你们届时准时到庭,逾期不到,本院将进行缺席审查。特此公告。闵行区人民法院2024年1月15日&quot;,
+        &quot;stdDate&quot;: &quot;2024-01-15&quot;,
+        &quot;stdPerson&quot;: &quot;乐视品牌营销策划(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;送达公告&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司,乐视移动智能信息技术（北京）有限公司:本院对北京路浩知识产权代理有限公司与乐视移动智能信息技术（北京）有限公司、乐视控股（北京）有限公司专利代理合同纠纷一案已审理终结。现依法向你公告送达（2023）京0105民初1694号民事判决书。自公告之日起30日内来本院领取民事判决书,逾期则视为送达。如不服本判决,可在公告期满后15日内,向本院递交上诉状及副本,上诉于北京知识产权法院。逾期未上诉的,本判决即发生法律效力。&quot;,
+        &quot;stdDate&quot;: &quot;2023-12-30&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司、乐视移动智能信息技术(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司,乐视移动智能信息技术（北京）有限公司:本院受理北京路浩知识产权代理有限公司与乐视移动智能信息技术（北京）有限公司等专利代理合同纠纷一案,现依法向你公告送达起诉状副本、证据材料及开庭传票。自公告之日起经过30日,即视为送达。提出答辩状和举证的期限分别为公告送达期满后次日起15日和30日内。并定于举证期满后第1日8 时40 分（遇法定休假日顺延）在北京市朝阳区人民法院民事审判五庭开庭审理。&quot;,
+        &quot;stdDate&quot;: &quot;2023-11-07&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司、乐视移动智能信息技术(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本及开庭传票&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京知识产权法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司:本院受理原告北京路浩知识产权代理有限公司诉被告乐视控股（北京）有限公司、乐视网信息技术（北京）股份有限公司专利代理合同纠纷一案,已经审理终结。现依法向你公司公告送达（2021）京73民初1580号判决书,本院判决如下:一、被告乐视控股（北京）有限公司、乐视网信息技术（北京）股份有限公司于本判决生效之日起七日内向原告北京路浩知识产权代理有限公司支付专利代理服务费90608.32元及逾期付款利息（对其中的28196.32元,自2017年7月1日起按中国人民银行规定的同期贷款利率计息至2019年8月19日止,自2019年8月20日起按全国银行间同业拆借中心公布的一年期贷款市场报价利率计算利息至付清之日止;对其中的56612元,自2017年7月1日起按中国人民银行规定的同期贷款利率计息至2019年8月19日止,自2019年8月20日起按全国银行间同业拆借中心公布的一年期贷款市场报价利率计算利息至付清之日止;对其中的5800元,自2017年7月1日起按中国人民银行规定的同期贷款利率计息至2019年8月19日止,自2019年8月20日起按全国银行间同业拆借中心公布的一年期贷款市场报价利率计算利息至付清之日止）;二、被告乐视控股（北京）有限公司、乐视网信息技术（北京）股份有限公司于本判决生效之日起七日内向原告北京路浩知识产权代理有限公司支付合理开支2000元;三、驳回原告北京路浩知识产权代理有限公司的其他诉讼请求。如果未按本判决指定的期间履行给付金钱义务,被告乐视控股（北京）有限公司、乐视网信息技术（北京）股份有限公司应当依照《中华人民共和国民事诉讼法》第二百六十条规定,加倍支付迟延履行期间的债务案件受理费2143元,由被告乐视控股（北京）有限公司、乐视网信息技术（北京）股份有限公司负担（于本判决生效后七日内交纳）。该判决自发出本公告之日起经过30日即视为送达。如不服本判决,各方当事人可于本判决书送达之日起十五日内,向本院提交上诉状,并按对方当事人人数提交副本,同时交纳上诉案件受理费一百元,上诉于中华人民共和国最高人民法院。&quot;,
+        &quot;stdDate&quot;: &quot;2023-08-27&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京知识产权法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司:本院受理的（2021）京73民初1580号北京路浩知识产权代理有限公司诉被告乐视网信息技术（北京）股份有限公司、乐视控股（北京）有限公司专利合同纠纷一案,现依法通知你公司作为本案被告参加诉讼,并依法向你公司公告送达起诉状副本、参加诉讼通知书、举证通知书,当事人参加诉讼须知、被告答辩状、证据以及开庭传票。上述材料自发出公告之日起30日即视为送达。答辩及举证期限均为公告送达期满之日起15日内。本院定于2023年6月15日上午9时30分在本院第十九法庭公开开庭审理本案,届时你公司无正当理由拒不到庭,本院将依法缺席审理。&quot;,
+        &quot;stdDate&quot;: &quot;2023-04-23&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本及开庭传票&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司:\r\n原告北京国都互联科技有限公司起诉被告乐视控股（北京）有限公司合同纠纷一案,现已审理终结。现依法向你公司公告送达（2022）京0105民初51557号民事判决书,判决主要内容如下:一、被告乐视控股（北京）有限公司于本判决生效之日起七日内向原告北京国都互联科技有限公司支付服务费4 648 801.65元;二、被告乐视控股（北京）有限公司于本判决生效之日起七日内向原告北京国都互联科技有限公司支付逾期付款利息,以4 648 801.65为基数,自2018年3月31日至2019年8月19日,按照中国人民银行同期同类贷款利率计算,自2019年8月20日至实际付款之日,按照同期全国银行间同业拆借中心公布的贷款市场报价利率计算。自公告之日起,经过30日内来本院酒仙桥法庭领取民事判决书,逾期则视为送达。如不服本判决,可在公告期满后15日内,向本院递交上诉状及副本,上诉于北京市第三中级人民法院。逾期本判决即发生法律效力。\r\n北京市朝阳区人民法院\r\n                              二○二三年一月十八日 \r\n联 系 人:W某某、L某某\r\n联系电话:86377807、86377813\r\n地    址:北京市朝阳区酒仙桥村2号&quot;,
+        &quot;stdDate&quot;: &quot;2023-01-31&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司:\r\n原告北京国都互联科技有限公司起诉被告乐视控股（北京）有限公司合同纠纷一案,本院已受理。原告的诉讼请求如下:1、判令被告向原告支付服务费4 648 801.65元;2、判令被告向原告支付逾期付款利息808 891.49元（以4 648 801.65元为基数,以中国人民银行同期同类人民币贷款基准利率4.35%每年为标准,2018年3月31日起至实际支付之日止,暂计算至2022年3月30日）;3、判令被告向原告承担基础律师费20000元及风险法律代理服务费（风险法律代理服务费以服务费及逾期付款利息暂共计5 457 693.14元为基数,以委托代理合同签订的15%为标准金,暂估为818 653.971元,以法院实际判决为准）。现依法向你公告送达起诉状副本及开庭传票。自公告之日起经过30日,即视为送达。提出答辩状和举证的期限均为公告送达期满后次日起15日,并定于举证期限届满后第3日上午九时整（遇法定节假日顺延）在本院酒仙桥法庭第二法庭开庭审理,逾期则依法缺席裁判。\r\n                            \r\n北京市朝阳区人民法院\r\n                             二○二二年十一月十一日 \r\n\r\n联 系 人:W某某、L某某\r\n联系电话:86377807、86377813\r\n地    址:北京市朝阳区酒仙桥村2号&quot;,
+        &quot;stdDate&quot;: &quot;2022-11-24&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本及开庭传票&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司:本院受理青岛方舟机电有限公司与乐视控股（北京）有限公司买卖合同纠纷一案,现依法向你公告送达起诉状副本、证据及开庭传票。自公告之日起经过30日,即视为送达。提出答辩状和举证的期限均为公告送达期满后次日起15日内。并定于举证期满后次日上午9:00（遇法定休假日顺延）在望京人民法庭一层第一法庭公开开庭审理此案,逾期本院将依法缺席裁判。&quot;,
+        &quot;stdDate&quot;: &quot;2022-08-30&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本及开庭传票&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司,乐视虚拟现实科技（北京）有限公司:本院对台州九盛盛元投资管理中心（有限合伙）与乐视控股（北京）有限公司,乐视虚拟现实科技（北京）有限公司公司增资纠纷一案已审理终结。现依法向你公告送达（2021）京03民初2058号民事判决书。自公告之日起30日内来本院领取民事判决书,逾期则视为送达。如不服本判决,可在公告期满后15日内,向本院递交上诉状及副本,上诉于北京市高级人民法院。逾期未上诉的,本判决即发生法律效力。&quot;,
+        &quot;stdDate&quot;: &quot;2022-08-28&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司、乐视虚拟现实科技(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐禧文化（北京）有限公司,乐视控股（北京）有限公司:  C某某就（2021）京0105民初68184号民事判决书提起上诉,本院已受理。现依法向你公告送达上诉状副本。自公告之日起经过30日,即视为送达。提出答辩状的期限为公告期满后15日内。逾期本院将依法审理。&quot;,
+        &quot;stdDate&quot;: &quot;2022-04-24&quot;,
+        &quot;stdPerson&quot;: &quot;乐禧文化(北京)有限公司、乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本、上诉状副本&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐禧文化（北京）有限公司,乐视控股（北京）有限公司:本院对北京十三幺文化中心与乐禧文化（北京）有限公司请求变更公司登记纠纷一案已审理终结。现依法向你公告送达（2021）京0105民初68185号民事判决书。自公告之日起30日内来本院领取民事判决书,逾期则视为送达。如不服本判决,可在公告期满后15日内,向本院递交上诉状及副本,上诉于北京市第三中级人民法院。逾期未上诉的,本判决即发生法律效力。&quot;,
+        &quot;stdDate&quot;: &quot;2022-03-13&quot;,
+        &quot;stdPerson&quot;: &quot;乐禧文化(北京)有限公司、乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐禧文化（北京）有限公司,乐视控股（北京）有限公司:本院对C某某与乐禧文化（北京）有限公司请求变更公司登记纠纷一案已审理终结。现依法向你公告送达（2021）京0105民初68184号民事判决书。自公告之日起30日内来本院领取民事判决书,逾期则视为送达。如不服本判决,可在公告期满后15日内,向本院递交上诉状及副本,上诉于北京市第三中级人民法院。逾期未上诉的,本判决即发生法律效力。&quot;,
+        &quot;stdDate&quot;: &quot;2022-03-13&quot;,
+        &quot;stdPerson&quot;: &quot;乐禧文化(北京)有限公司、乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司,乐视虚拟现实科技（北京）有限公司:本院受理台州九盛盛元投资管理中心（有限合伙）与乐视虚拟现实科技（北京）有限公司、乐视控股（北京）有限公司公司增资纠纷一案,现依法向你公告送达起诉状副本、证据材料、应诉通知书、举证通知书、合议庭成员告知书、廉政监督卡、诉讼须知及开庭传票。自公告之日起经过30日,即视为送达。提出答辩状和举证的期限分别为公告送达期满后次日起15日和30日内。并定于举证期满后第3日9 时30分（遇法定节假日顺延）在本院第10法庭开庭审理。逾期不到庭将依法缺席裁判。&quot;,
+        &quot;stdDate&quot;: &quot;2022-01-18&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司、乐视虚拟现实科技(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本及开庭传票&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;山西省临汾市中级人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;J某某:本院受理山西尧信融资担保有限公司与你、乐视控股（北京）有限公司、北京百鼎新世纪商业管理有限公司、北京财富时代置业有限公司借款合同纠纷一案,案号为（2021）晋10民初193号,现依法向你公告送达开庭传票,自本公告发出之日起经过60日即视为送达。并定于公告期满后第3日上午9时（遇法定节假日顺延）在本院第九法庭公开开庭审理,逾期将依法缺席裁判。&quot;,
+        &quot;stdDate&quot;: &quot;2021-12-16&quot;,
+        &quot;stdPerson&quot;: &quot;J某某&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本及开庭传票&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;L某某:本院受理原告深圳市创新投资集团有限公司、深圳市红土信息创业投资有限公司、河北红土创业投资有限公司、石家庄红土冀深创业投资有限公司与被告乐视控股（北京）有限公司、J某某、L某某合同纠纷一案,已作出（2021）京03民初369号民事判决书,被告乐视控股（北京）有限公司不服该判决提出上诉。现依法向你公告送达被告乐视控股（北京）有限公司提交的上诉状。限你自本公告发布之日起60日内来本院领取民事上诉状副本,逾期则视为送达。提出答辩状的期限为公告期满后15日内。&quot;,
+        &quot;stdDate&quot;: &quot;2021-12-09&quot;,
+        &quot;stdPerson&quot;: &quot;L某某&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本、上诉状副本&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;上海市徐汇区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司:本院受理上海谋熠广告有限公司与被告乐视控股（北京）有限公司广告合同纠纷一案,已审理终结。现依法向你方公告送达（2021）沪0104民初17502号民事判决书。请你自公告之日起,60日内来本院商事审判庭领取民事判决书,逾期则视为送达。如不服本判决,可在公告期满后15日内,向本院递交上诉状及副本,上诉于上海市第一中级人民法院。逾期本判决即发生法律效力。特此公告。&quot;,
+        &quot;stdDate&quot;: &quot;2021-11-04&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;L某某:本院对深圳市创新投资集团有限公司、深圳市红土信息创业投资有限公司、河北红土创业投资有限公司、石家庄红土冀深创业投资有限公司与被告乐视控股（北京）有限公司、J某某、L某某合同纠纷一案已审理终结。现依法向你公告送达（2021）京03民初369号民事判决书。自公告之日起60日内来本院领取民事判决书,逾期则视为送达。如不服本判决,可在公告期满后15日内,向本院递交上诉状及副本,上诉于北京市高级人民法院。逾期未上诉的,本判决即发生法律效力。&quot;,
+        &quot;stdDate&quot;: &quot;2021-11-02&quot;,
+        &quot;stdPerson&quot;: &quot;L某某&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;乐视控股（北京）有限公司:本院对重庆乐视商业保理有限公司与乐为互联投资管理（北京）有限公司、乐视控股（北京）有限公司借款合同纠纷一案已审理终结。现依法向你公告送达（2020）京0105民初55350号民事判决书。自公告之日起60日内来本院领取民事判决书,逾期则视为送达。如不服本判决,可在公告期满后15日内,向本院递交上诉状及副本,上诉于北京市第三中级人民法院。逾期未上诉的,本判决即发生法律效力。&quot;,
+        &quot;stdDate&quot;: &quot;2021-10-24&quot;,
+        &quot;stdPerson&quot;: &quot;乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;裁判文书&quot;
+      },
+      {
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdContent&quot;: &quot;北京市朝阳区人民法院\r\n公  告\r\n乐禧文化（北京）有限公司、乐视控股（北京）有限公司:\r\n本院受理（2021）京0105民初68185号原告北京十三幺文化中心（有限合伙）与被告乐禧文化（北京）有限公司、第三人乐视控股（北京）有限公司请求变更公司登记纠纷一案,现依法向你们公告送达民事起诉状副本、证据副本、开庭传票、应诉通知书、举证通知书。自公告发出之日起60日视为送达。提出答辩状和举证的时限均为送达期满后的15日内。本院将于举证期满后第1个工作日上午9时（如遇法定节假日顺延）在北京市朝阳区人民法院民事审判第四庭（北京市朝阳区华威北里甲14号）开庭审理,逾期将依法缺席判决。\r\n   \r\n                    北京市朝阳区人民法院\r\n                              二〇二一年九月二十六日\r\n\r\n联系地址:北京市朝阳区华威北里甲14号北京市朝阳区人民法院民四庭\r\n邮编:100021\r\n联系人:S某某  010-85998287&quot;,
+        &quot;stdDate&quot;: &quot;2021-09-30&quot;,
+        &quot;stdPerson&quot;: &quot;乐禧文化(北京)有限公司、乐视控股(北京)有限公司&quot;,
+        &quot;stdType&quot;: &quot;起诉状副本及开庭传票&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br></div></div><h2 id="_6、司法风险-被执行企业"><a href="#_6、司法风险-被执行企业" class="header-anchor">#</a> 6、司法风险-被执行企业</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：乐视控股（北京）有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_EXECUTED_PERSON_LIST</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdId</td> <td>String</td> <td>执行ID</td></tr> <tr><td>├─ stdCaseNumber</td> <td>String</td> <td>执行依据文号</td></tr> <tr><td>├─ stdStatus</td> <td>String</td> <td>执行状态, 0为执行中，1为已结案</td></tr> <tr><td>├─ stdCourt</td> <td>String</td> <td>执行法院</td></tr> <tr><td>├─ stdCaseDate</td> <td>String</td> <td>立案日期</td></tr> <tr><td>├─ stdAmount</td> <td>String</td> <td>执行金额，单位：元，人民币</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>0：当前公示信息；1：历史公示信息</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 340,
+    &quot;num&quot;: 20,
+    &quot;items&quot;: [
+      {
+        &quot;stdId&quot;: &quot;65c00db26eda9b8303f24be2&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2024）京74执189号&quot;,
+        &quot;stdStatus&quot;: &quot;0&quot;,
+        &quot;stdCourt&quot;: &quot;北京金融法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2024-02-04&quot;,
+        &quot;stdAmount&quot;: &quot;832793340&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;6577f409de2a45941ef54070&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执1656号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-12-05&quot;,
+        &quot;stdAmount&quot;: &quot;4865360&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;654545d4e13aa6520834fdea&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）晋10执207号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;临汾市中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-11-03&quot;,
+        &quot;stdAmount&quot;: &quot;155980528&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;650368db1c84caa59b3b7f8e&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执1062号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-08-23&quot;,
+        &quot;stdAmount&quot;: &quot;924188&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64d28ceb9bd1f22077f91766&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执恢223号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-08-04&quot;,
+        &quot;stdAmount&quot;: &quot;41100&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64d28ceb9bd1f22077f91768&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执恢226号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-08-04&quot;,
+        &quot;stdAmount&quot;: &quot;14200&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64d28ceb9bd1f22077f91769&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执恢222号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-08-04&quot;,
+        &quot;stdAmount&quot;: &quot;216600&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64d28ceb9bd1f22077f9176a&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执恢224号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-08-04&quot;,
+        &quot;stdAmount&quot;: &quot;93200&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64d28ceb9bd1f22077f91767&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执恢225号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-08-04&quot;,
+        &quot;stdAmount&quot;: &quot;150400&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64cc019a12e5872f0494c66d&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京执52号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市高级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-07-28&quot;,
+        &quot;stdAmount&quot;: &quot;2612704&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64cc019a12e5872f0494c66f&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京执88号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市高级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-07-28&quot;,
+        &quot;stdAmount&quot;: &quot;600000&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64cc019a12e5872f0494c66e&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京执35号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市高级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-07-28&quot;,
+        &quot;stdAmount&quot;: &quot;1460000&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64c30023079848d852e27fb8&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）粤03执恢793号&quot;,
+        &quot;stdStatus&quot;: &quot;0&quot;,
+        &quot;stdCourt&quot;: &quot;深圳市中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-07-27&quot;,
+        &quot;stdAmount&quot;: &quot;20000000&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;64ac9a0a60181b60fd98eae4&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执833号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-07-05&quot;,
+        &quot;stdAmount&quot;: &quot;1344174&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;6448f50693f410afcd0c1b21&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京0105执16679号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-04-24&quot;,
+        &quot;stdAmount&quot;: &quot;5610811&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;63ed70029658a8aa20435eae&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执252号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-02-14&quot;,
+        &quot;stdAmount&quot;: &quot;93176&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;63ed70029658a8aa20435ead&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执250号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-02-14&quot;,
+        &quot;stdAmount&quot;: &quot;216647&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;63ed70029658a8aa20435eaf&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执249号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-02-14&quot;,
+        &quot;stdAmount&quot;: &quot;14150&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;63ed70029658a8aa20435eac&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执251号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-02-14&quot;,
+        &quot;stdAmount&quot;: &quot;150446&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      },
+      {
+        &quot;stdId&quot;: &quot;63ed70029658a8aa20435eab&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）京01执237号&quot;,
+        &quot;stdStatus&quot;: &quot;1&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdCaseDate&quot;: &quot;2023-02-13&quot;,
+        &quot;stdAmount&quot;: &quot;41079&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br></div></div><h2 id="_7、司法风险-失信被执行企业"><a href="#_7、司法风险-失信被执行企业" class="header-anchor">#</a> 7、司法风险-失信被执行企业</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：乐视控股（北京）有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_EXECUTION_LIST</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdProvince</td> <td>String</td> <td>省份</td></tr> <tr><td>├─ stdDate</td> <td>String</td> <td>立案时间</td></tr> <tr><td>├─ stdDocNumber</td> <td>String</td> <td>执行依据文号</td></tr> <tr><td>├─ stdFinalDuty</td> <td>String</td> <td>生效法律文书确定的义务</td></tr> <tr><td>├─ stdExecutionStatus</td> <td>String</td> <td>被执行人履行情况</td></tr> <tr><td>├─ stdCaseNumber</td> <td>String</td> <td>案号</td></tr> <tr><td>├─ stdAmount</td> <td>String</td> <td>执行标的</td></tr> <tr><td>├─ stdPublishDate</td> <td>String</td> <td>发布日期</td></tr> <tr><td>├─ stdCourt</td> <td>String</td> <td>执行法院</td></tr> <tr><td>├─ stdExecutionDesc</td> <td>String</td> <td>失信被执行人行为具体情形</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>0：当前公示信息；1：历史公示信息</td></tr> <tr><td>├─ stdOperName</td> <td>String</td> <td>法定代表人</td></tr> <tr><td>├─ stdNumber</td> <td>String</td> <td>组织机构号</td></tr> <tr><td>├─ stdExDepartment</td> <td>String</td> <td>做出执行依据单位</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 52,
+    &quot;num&quot;: 20,
+    &quot;items&quot;: [
+      {
+        &quot;stdProvince&quot;: &quot;山西&quot;,
+        &quot;stdDate&quot;: &quot;2023-11-03&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2021）晋10民初193号（2022）晋民终582号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;判决书&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2023）晋10执207号&quot;,
+        &quot;stdAmount&quot;: &quot;-&quot;,
+        &quot;stdPublishDate&quot;: &quot;2023-12-13&quot;,
+        &quot;stdCourt&quot;: &quot;临汾市中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;有履行能力而拒不履行生效法律文书确定义务&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;山西省高级人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2022-10-10&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2020）京0105民初60932号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;偿还原告重庆乐视商业保理有限公司借款本金31910000元及利息&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2022）京0105执恢4967号&quot;,
+        &quot;stdAmount&quot;: &quot;31910000&quot;,
+        &quot;stdPublishDate&quot;: &quot;2023-09-13&quot;,
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;有履行能力而拒不履行生效法律文书确定义务&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市朝阳区人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;天津&quot;,
+        &quot;stdDate&quot;: &quot;2022-04-14&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2019）津0116民初63261号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;一、被告乐视云计算有限公司于判决发生法律效力后五日内支付原告中国电信集团有限公司天津分公司电信服务费8,338,816.96元及违约金(以6,174,716.96元为基数,自2019年1月1日至实际给付之日止,按日万分之一的标准计付);二、被告乐视控股(北京)有限公司在未出资本息范围内对被告乐视云计算有限公司上述债务不能清偿的部分承担补充赔偿责任;三、驳回原告中国电信集团有限公司天津分公司的其他诉讼请求。如果被告未按照本判决指定的期间履行上述金钱给付义务,应当依照《中华人民共和国民事诉讼法》第二百五十三条之规定,加倍支付延迟履行期间的债务利息。案件受理费38,161.5元,由原告负担3,450元,二被告负担34,711.5元。如不服本判决,可在判决书送达之日起十五日内向本院递交上诉状,并按对方当事人的人数提出副本,上诉于天津市第三中级人民法院。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2022）津0116执恢1943号&quot;,
+        &quot;stdAmount&quot;: &quot;8376978.46&quot;,
+        &quot;stdPublishDate&quot;: &quot;2022-09-08&quot;,
+        &quot;stdCourt&quot;: &quot;天津市滨海新区人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;天津市滨海新区人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2021-04-08&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2017）京04民初180号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;一、被告乐视移动智能信息技术(北京)有限公司于二○一八年六月三十日前向原告益登科技股份有限公司支付货款5266190美元以及实现债权的费用人民币58525.5元;\n二、被告乐视控股(北京)有限公司对被告乐视移动智能信息技术(北京)有限公司的前述债务承担一般保证责任;\n三、被告乐视控股(北京)有限公司根据前款约定承担一般保证责任后,有权向被告乐视移动智能信息技术(北京)有限公司追偿;\n四、案件受理费人民币234 102元,减半收取为人民币117 051元,以及财产保全费人民币5000元,由原告益登科技股份有限公司负担(已交纳)。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2021）京04执恢64号&quot;,
+        &quot;stdAmount&quot;: &quot;5388241&quot;,
+        &quot;stdPublishDate&quot;: &quot;2022-02-22&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第四中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市第四中级人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;广东&quot;,
+        &quot;stdDate&quot;: &quot;2021-08-26&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2020）粤03民初1623号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;网上立案编号【Z10280216607421】。综上所述,乐视公司、乐视网公司、华润公司、鹏华公司经本院依法传唤,无正当理由拒不到庭参加诉讼,应视为其放弃相应的抗辩权利。浦发银行深圳分行的诉讼请求有事实和法律依据,本院予以支持。本院依照《最高人民法院关于适用く中华人民共和国民法典&gt;时间效的若干规定》第一条,《中华人民共和国合同法》第八条、第六十条、第一百零七条、第一百一十四条,《中华人民共和国民事诉讼法》第一百四十四条的规定,判决如下:一、被告乐视控股(北京)有限公司应于本判决生效之日起十日内向原告上海浦东发展银行股份有限公司深圳分行支付差额补足款61837874.09元。二、被告乐视控股(北京)有限公司应于本判决生效之日起十日内向原告上海浦东发展银行股份有限公司深圳分行支付罚息(以61837874.09元为基数,按每日万分之五的标准,自2018年4月9日起计至款项清偿之日止)。若当事人未按本判决指定的期间履行上述付款义务,则应按照《中华人民共和国民事诉讼法》第二百五十三条的规定加倍支付迟延履行期间的债务利息。案件受理费359955.86元,财产保全费5000元,公告费1300元(已由原告上海浦东发展银行般份有限公司深圳分行预交),均由被告乐视控股(北京)有限公司承担。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2021）粤03执7101号&quot;,
+        &quot;stdAmount&quot;: &quot;62204129.95&quot;,
+        &quot;stdPublishDate&quot;: &quot;2021-11-18&quot;,
+        &quot;stdCourt&quot;: &quot;深圳市中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;其他规避执行&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;深圳市中级人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2021-02-02&quot;,
+        &quot;stdDocNumber&quot;: &quot;2019中国贸仲京裁字第0939号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;向申请执行人支付28751.42484万元。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2021）京03执恢34号&quot;,
+        &quot;stdAmount&quot;: &quot;287514248.4&quot;,
+        &quot;stdPublishDate&quot;: &quot;2021-09-27&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;中国国际经济贸易仲裁委员会&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2021-04-06&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2018）京0108民初51312号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;申请标的金额: 36,731,832.78 元 。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2021）京0108执6562号&quot;,
+        &quot;stdAmount&quot;: &quot;36731832.78&quot;,
+        &quot;stdPublishDate&quot;: &quot;2021-06-16&quot;,
+        &quot;stdCourt&quot;: &quot;北京市海淀区人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;有履行能力而拒不履行生效法律文书确定义务&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市海淀区人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-10-26&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2020）京执50号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;未履行法律文书确定的义务。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京03执1634号&quot;,
+        &quot;stdAmount&quot;: &quot;426561120&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-12-25&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市高级人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-10-19&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2018）京0105民初87593号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;乐视控股(北京)有限公司给付北京二十一北方广告有限公司9万元及利息等款项&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京0105执30747号&quot;,
+        &quot;stdAmount&quot;: &quot;90000&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-12-07&quot;,
+        &quot;stdCourt&quot;: &quot;北京市朝阳区人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;有履行能力而拒不履行生效法律文书确定义务&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市朝阳区人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-05-26&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2019）京03民初25号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;被执行人乐视控股(北京)有限公司应向申请执行人X某某支付人民币四千八百五十万元及利息(第一期利息以一千五百万元为基数,按年利率15%计算,自2019年4月24日起至实际清偿之日止;第二期利息以一千六百五十万元为基数,按年利率15%计算,自2019年7月26日起至实际清偿之日止;第三期利息以一千七百万元为基数,按年利率15%计算,自2019年9月26日起至实际清偿之日止。)&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京03执恢111号&quot;,
+        &quot;stdAmount&quot;: &quot;48500000&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-12-04&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市第三中级人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-04-20&quot;,
+        &quot;stdDocNumber&quot;: &quot;2019中国贸仲京裁字第0394号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;支付股权认购价款本金十亿元及相应投资收益&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京03执恢88号&quot;,
+        &quot;stdAmount&quot;: &quot;1000000000&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-09-04&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;中国国际经济贸易仲裁委员会&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-07-23&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2019）京73民初323号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;被执行人应向申请执行人支付本金、利息及迟延履行期间的债务利息等。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京01执760号&quot;,
+        &quot;stdAmount&quot;: &quot;36078&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-09-02&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京知识产权法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-07-23&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2019）京73民初326号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;被执行人应向申请执行人支付本金、利息及迟延履行期间的债务利息等。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京01执752号&quot;,
+        &quot;stdAmount&quot;: &quot;17430&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-09-02&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京知识产权法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-07-23&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2018）京73民初812号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;被执行人应向申请执行人支付本金、利息及迟延履行期间的债务利息等。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京01执751号&quot;,
+        &quot;stdAmount&quot;: &quot;1263943&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-09-02&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第一中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京知识产权法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;天津&quot;,
+        &quot;stdDate&quot;: &quot;2020-01-15&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2019）津0116民初63261号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;一、被告乐视云计算有限公司于判决发生法律效力后五日内支付原告中国电信集团有限公司天津分公司电信服务费8,338,816.96元及违约金(以6,174,716.96元为基数,自2019年1月1日至实际给付之日止,按日万分之一的标准计付);二、被告乐视控股(北京)有限公司在未出资本息范围内对被告乐视云计算有限公司上述债务不能清偿的部分承担补充赔偿责任;三、驳回原告中国电信集团有限公司天津分公司的其他诉讼请求。如果被告未按照本判决指定的期间履行上述金钱给付义务,应当依照《中华人民共和国民事诉讼法》第二百五十三条之规定,加倍支付延迟履行期间的债务利息。案件受理费38,161.5元,由原告负担3,450元,二被告负担34,711.5元。如不服本判决,可在判决书送达之日起十五日内向本院递交上诉状,并按对方当事人的人数提出副本,上诉于天津市第三中级人民法院。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）津0116执954号&quot;,
+        &quot;stdAmount&quot;: &quot;8376978.46&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-06-01&quot;,
+        &quot;stdCourt&quot;: &quot;天津市滨海新区人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;天津市大港区人民法院民事审判第一庭&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-01-08&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2019）京执96号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;一、被执行人乐视移动智能信息技术(北京)有限公司应支付一千七百二十万八千九百一十美元五美分(可按照2017年6月21日汇率6.8193折算为人民币一亿一千七百三十五万二千七百二十三元三角七分)及利息(自2017年1月26日起至实际付清之日止,以本金一千七百二十万八千九百一十美元五美分为基数,按照年利率6%标准计算,可按照付款当日汇率折算为人民币数额)。\n二、被执行人乐视控股(北京)有限公司对第一项所确定的债务承担一般保证责任。\n三、执行人乐视移动智能信息技术(北京)有限公司、乐视控股(北京)有限公司应负担的财产保全费人民币五千元。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京03执205号&quot;,
+        &quot;stdAmount&quot;: &quot;17213910&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-05-08&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市高级人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-03-10&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2020）京执5号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;支付货款本金245290800元及利息,支付货款245529153.08元及利息&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京03执408号&quot;,
+        &quot;stdAmount&quot;: &quot;490819953.08&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-04-23&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市高级人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2020-01-16&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2019）京03民初277号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;被执行人应向申请执行人支付人民币131392243.51元及利息。&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2020）京03执310号&quot;,
+        &quot;stdAmount&quot;: &quot;131392243.51&quot;,
+        &quot;stdPublishDate&quot;: &quot;2020-03-12&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京市第三中级人民法院&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2018-07-20&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2018）中国贸仲京裁字第0436号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;未履行生效法律文书确定的义务&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2018）京03执672号&quot;,
+        &quot;stdAmount&quot;: &quot;682066240&quot;,
+        &quot;stdPublishDate&quot;: &quot;2019-12-14&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;中国国际经济贸易仲裁委员会&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;北京&quot;,
+        &quot;stdDate&quot;: &quot;2019-01-04&quot;,
+        &quot;stdDocNumber&quot;: &quot;（2018）京仲裁字第0146号&quot;,
+        &quot;stdFinalDuty&quot;: &quot;未履行生效法律文书确定的义务&quot;,
+        &quot;stdExecutionStatus&quot;: &quot;全部未履行&quot;,
+        &quot;stdCaseNumber&quot;: &quot;（2019）京03执30号&quot;,
+        &quot;stdAmount&quot;: &quot;50826768&quot;,
+        &quot;stdPublishDate&quot;: &quot;2019-12-12&quot;,
+        &quot;stdCourt&quot;: &quot;北京市第三中级人民法院&quot;,
+        &quot;stdExecutionDesc&quot;: &quot;违反财产报告制度&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdOperName&quot;: &quot;&quot;,
+        &quot;stdNumber&quot;: &quot;&quot;,
+        &quot;stdExDepartment&quot;: &quot;北京仲裁委员会&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br></div></div><h2 id="_8、经营风险-行政处罚"><a href="#_8、经营风险-行政处罚" class="header-anchor">#</a> 8、经营风险-行政处罚</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：凉山州鑫坤商贸有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_ADMIN_PUNISH</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdIllegalType</td> <td>String</td> <td>违法行为类型</td></tr> <tr><td>├─ stdSource</td> <td>String</td> <td>来源，工商，信用中国，其他</td></tr> <tr><td>├─ stdContent</td> <td>String</td> <td>行政处罚内容</td></tr> <tr><td>├─ stdDepartment</td> <td>String</td> <td>决定机关名称</td></tr> <tr><td>├─ stdPublishDate</td> <td>String</td> <td>公示日期</td></tr> <tr><td>├─ stdDate</td> <td>String</td> <td>处罚决定日期</td></tr> <tr><td>├─ stdDescription</td> <td>String</td> <td>详情</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>0：当前公示信息；1：历史公示信息</td></tr> <tr><td>├─ stdNumber</td> <td>String</td> <td>决定书文号</td></tr> <tr><td>├─ stdBasedOn</td> <td>String</td> <td>处罚依据</td></tr> <tr><td>├─ stdSeqNo</td> <td>Integer</td> <td>序号</td></tr> <tr><td>├─ stdPunishAmnt</td> <td>String</td> <td>罚款金额（万元）</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 1,
+    &quot;num&quot;: 1,
+    &quot;items&quot;: [
+      {
+        &quot;stdIllegalType&quot;: &quot;公司及其分支机构违法行为&quot;,
+        &quot;stdSource&quot;: &quot;工商&quot;,
+        &quot;stdContent&quot;: &quot;吊销营业执照&quot;,
+        &quot;stdDepartment&quot;: &quot;凉山州工商行政管理局&quot;,
+        &quot;stdPublishDate&quot;: &quot;2017-06-22&quot;,
+        &quot;stdDate&quot;: &quot;2017-06-22&quot;,
+        &quot;stdDescription&quot;: &quot;-&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdNumber&quot;: &quot;川工商凉处字〔2017〕0402号&quot;,
+        &quot;stdBasedOn&quot;: &quot;-&quot;,
+        &quot;stdSeqNo&quot;: 1,
+        &quot;stdPunishAmnt&quot;: &quot;0&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h2 id="_9、经营风险-经营异常"><a href="#_9、经营风险-经营异常" class="header-anchor">#</a> 9、经营风险-经营异常</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：乐视致新电子科技（天津）有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_ABNORMALS</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdProvince</td> <td>String</td> <td>省份</td></tr> <tr><td>├─ stdInDate</td> <td>String</td> <td>列入时间</td></tr> <tr><td>├─ stdInDepartment</td> <td>String</td> <td>列入异常做出决定机关</td></tr> <tr><td>├─ stdOutDate</td> <td>String</td> <td>移出时间</td></tr> <tr><td>├─ stdOutReason</td> <td>String</td> <td>移出原因</td></tr> <tr><td>├─ stdRegNo</td> <td>String</td> <td>注册号</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>是否历史：0：否，当前公示信息；1：是，历史公示信息</td></tr> <tr><td>├─ stdInReason</td> <td>String</td> <td>列入原因</td></tr> <tr><td>├─ stdName</td> <td>String</td> <td>企业名称</td></tr> <tr><td>├─ stdOutDepartment</td> <td>String</td> <td>移出异常做出决定机关</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;stdProvince&quot;: &quot;TJ&quot;,
+        &quot;stdInDate&quot;: &quot;2019-12-09&quot;,
+        &quot;stdDepartment&quot;: &quot;天津市滨海新区市场监督管理局&quot;,
+        &quot;stdOutDate&quot;: &quot;2019-12-20&quot;,
+        &quot;stdOutReason&quot;: &quot;列入经营异常名录3年内且依照《经营异常名录管理办法》第八条规定被列入经营异常名录的企业更正其公示的信息后，申请移出&quot;,
+        &quot;stdRegNo&quot;: &quot;120116000087526&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdInReason&quot;: &quot;公示企业信息隐瞒真实情况、弄虚作假的&quot;,
+        &quot;stdName&quot;: &quot;乐融致新电子科技（天津）有限公司&quot;,
+        &quot;stdOutDepartment&quot;: &quot;天津市滨海新区市场监督管理局&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;TJ&quot;,
+        &quot;stdInDate&quot;: &quot;2018-03-01&quot;,
+        &quot;stdDepartment&quot;: &quot;天津市市场和质量监督管理委员会&quot;,
+        &quot;stdOutDate&quot;: &quot;-&quot;,
+        &quot;stdOutReason&quot;: &quot;-&quot;,
+        &quot;stdRegNo&quot;: &quot;120116000087526&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdInReason&quot;: &quot;通过登记的住所或者经营场所无法联系的&quot;,
+        &quot;stdName&quot;: &quot;乐融致新电子科技（天津）有限公司&quot;,
+        &quot;stdOutDepartment&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdProvince&quot;: &quot;TJ&quot;,
+        &quot;stdInDate&quot;: &quot;2015-07-09&quot;,
+        &quot;stdDepartment&quot;: &quot;天津市滨海新区市场和质量监督管理局&quot;,
+        &quot;stdOutDate&quot;: &quot;2015-11-25&quot;,
+        &quot;stdOutReason&quot;: &quot;列入经营异常名录3年内且依照《经营异常名录管理办法》第六条规定被列入经营异常名录的企业，可以在补报未报年份的年度报告并公示后，申请移出&quot;,
+        &quot;stdRegNo&quot;: &quot;120116000087526&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdInReason&quot;: &quot;未依照《企业信息公示暂行条例》第八条规定的期限公示年度报告的【2014】&quot;,
+        &quot;stdName&quot;: &quot;乐视致新电子科技（天津）有限公司&quot;,
+        &quot;stdOutDepartment&quot;: &quot;-&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><h2 id="_10、经营风险-严重违法"><a href="#_10、经营风险-严重违法" class="header-anchor">#</a> 10、经营风险-严重违法</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：深圳市福田区回春养生贸易商行</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_SERIOUS_ILLEGAL</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdInDate</td> <td>String</td> <td>列入日期</td></tr> <tr><td>├─ stdInDepartment</td> <td>String</td> <td>作出决定机关（列入）</td></tr> <tr><td>├─ stdOutDate</td> <td>String</td> <td>移出时间</td></tr> <tr><td>├─ stdOutReason</td> <td>String</td> <td>移出严重违法失信企业名单（黑名单）原 因</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>0，非历史信息；1 历史信息</td></tr> <tr><td>├─ stdInReason</td> <td>String</td> <td>列入严重违法失信企业名单（黑名单）原 因</td></tr> <tr><td>├─ stdOutDepartment</td> <td>String</td> <td>作出决定机关（移出）</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;stdInReason&quot;: &quot;被列入经营异常名录届满3年仍未履行相关义务的&quot;,
+        &quot;stdInDate&quot;: &quot;2017-10-13&quot;,
+        &quot;stdInDepartment&quot;: &quot;深圳市市场和质量监督管理委员会福田局&quot;,
+        &quot;stdOutDate&quot;: &quot;2018-01-27&quot;,
+        &quot;stdOutReason&quot;: &quot;已注销，系统自动移出&quot;,
+        &quot;stdOutDepartment&quot;: &quot;深圳市市场和质量监督管理委员会福田局&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="_11、经营风险-重大税收违法"><a href="#_11、经营风险-重大税收违法" class="header-anchor">#</a> 11、经营风险-重大税收违法</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：厦门隆昌华贸易有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_TAX_CASE</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>0正常；1历史</td></tr> <tr><td>├─ stdProperty</td> <td>String</td> <td>案件性质</td></tr> <tr><td>├─ stdCreatedTime</td> <td>String</td> <td>创建时间</td></tr> <tr><td>├─ stdFinanceOfficer</td> <td>String</td> <td>负有直接责任的财务负责人</td></tr> <tr><td>├─ stdName</td> <td>String</td> <td>纳税人名称</td></tr> <tr><td>├─ stdCreditNo</td> <td>String</td> <td>纳税人识别号</td></tr> <tr><td>├─ stdOper</td> <td>String</td> <td>法定代表人或者负责人</td></tr> <tr><td>├─ stdTime</td> <td>String</td> <td>发生时间</td></tr> <tr><td>├─ stdAddress</td> <td>String</td> <td>注册地址</td></tr> <tr><td>├─ stdResult</td> <td>String</td> <td>相关法律依据及,税务处理处罚情况</td></tr> <tr><td>├─ stdOrgNo</td> <td>String</td> <td>组织机构代码</td></tr> <tr><td>├─ stdUrl</td> <td>String</td> <td>原文链接</td></tr> <tr><td>├─ stdAgent</td> <td>String</td> <td>负有直接责任的中介机构信息及其从业人员</td></tr> <tr><td>├─ stdIllegalFact</td> <td>String</td> <td>主要违法事实</td></tr> <tr><td>├─ stdUpdatedTime</td> <td>String</td> <td>更新时间</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 1,
+    &quot;items&quot;: [
+      {
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdProperty&quot;: &quot;虚开增值税专用发票或者虚开用于骗取出口退税、抵扣税款的其他发票&quot;,
+        &quot;stdCreatedTime&quot;: &quot;2020-01-09&quot;,
+        &quot;stdFinanceOfficer&quot;: &quot;-&quot;,
+        &quot;stdName&quot;: &quot;厦门隆昌华贸易有限公司&quot;,
+        &quot;stdCreditNo&quot;: &quot;91350211MA34ADTC9U&quot;,
+        &quot;stdOper&quot;: &quot;王丽琼,女&quot;,
+        &quot;stdTime&quot;: &quot;2019-07-25&quot;,
+        &quot;stdAddress&quot;: &quot;厦门市集美区滨水一里38号1904室&quot;,
+        &quot;stdResult&quot;: &quot;依照《中华人民共和国税收征收管理法》等相关法律法规的有关规定，对其处以罚款20.00万元的行政处罚。&quot;,
+        &quot;stdOrgNo&quot;: &quot;MA34ADTC9&quot;,
+        &quot;stdUrl&quot;: &quot;http://xiamen.chinatax.gov.cn:8004/front/dispatch/sswfrightShow.do?wfid=26d88fa65118148470b479a17c0c06db&quot;,
+        &quot;stdAgent&quot;: &quot;-&quot;,
+        &quot;stdIllegalFact&quot;: &quot;经国家税务总局厦门市税务局第一稽查局检查，发现其在2016年08月29日至2016年12月31日期间，主要存在以下问题：对外虚开增值税销项发票47份，金额315.60万元，税额53.65万元。&quot;,
+        &quot;stdUpdatedTime&quot;: &quot;2021-06-20&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h2 id="_12、经营风险-欠税信息"><a href="#_12、经营风险-欠税信息" class="header-anchor">#</a> 12、经营风险-欠税信息</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：珠海华发投资发展有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_OVER_DUE_TAX</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdOverduePeriod</td> <td>String</td> <td>欠税所属期</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>是否历史信息(0:否,1:是)</td></tr> <tr><td>├─ stdPubDepartment</td> <td>String</td> <td>发布单位</td></tr> <tr><td>├─ stdTaxpayerType</td> <td>String</td> <td>纳税人类型</td></tr> <tr><td>├─ stdPubDate</td> <td>String</td> <td>发布日期</td></tr> <tr><td>├─ stdArea</td> <td>String</td> <td>所属市县区</td></tr> <tr><td>├─ stdAddress</td> <td>String</td> <td>经营地点</td></tr> <tr><td>├─ stdOperName</td> <td>String</td> <td>负责人姓名</td></tr> <tr><td>├─ stdTaxpayerNum</td> <td>String</td> <td>纳税人识别号</td></tr> <tr><td>├─ stdOverdueAmount</td> <td>String</td> <td>欠税余额</td></tr> <tr><td>├─ stdOverdueType</td> <td>String</td> <td>欠税税种</td></tr> <tr><td>├─ stdOperIdNum</td> <td>String</td> <td>企业证照号</td></tr> <tr><td>├─ stdCurrOverdueAmount</td> <td>String</td> <td>当前发生的欠税余额</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 2,
+    &quot;num&quot;: 2,
+    &quot;items&quot;: [
+      {
+        &quot;stdOverduePeriod&quot;: &quot;-&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdPubDepartment&quot;: &quot;黄浦区税务局&quot;,
+        &quot;stdTaxpayerType&quot;: &quot;-&quot;,
+        &quot;stdPubDate&quot;: &quot;-&quot;,
+        &quot;stdArea&quot;: &quot;-&quot;,
+        &quot;stdAddress&quot;: &quot;-&quot;,
+        &quot;stdOperName&quot;: &quot;STEPHEN BAKER&quot;,
+        &quot;stdTaxpayerNum&quot;: &quot;310101590438001&quot;,
+        &quot;stdOverdueAmount&quot;: &quot;5746.2&quot;,
+        &quot;stdOverdueType&quot;: &quot;营业税&quot;,
+        &quot;stdOperIdNum&quot;: &quot;-&quot;,
+        &quot;stdCurrOverdueAmount&quot;: &quot;0&quot;
+      },
+      {
+        &quot;stdOverduePeriod&quot;: &quot;-&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdPubDepartment&quot;: &quot;黄浦区税务局&quot;,
+        &quot;stdTaxpayerType&quot;: &quot;-&quot;,
+        &quot;stdPubDate&quot;: &quot;-&quot;,
+        &quot;stdArea&quot;: &quot;-&quot;,
+        &quot;stdAddress&quot;: &quot;-&quot;,
+        &quot;stdOperName&quot;: &quot;STEPHEN BAKER&quot;,
+        &quot;stdTaxpayerNum&quot;: &quot;310101590438001&quot;,
+        &quot;stdOverdueAmount&quot;: &quot;402.23&quot;,
+        &quot;stdOverdueType&quot;: &quot;城建税&quot;,
+        &quot;stdOperIdNum&quot;: &quot;-&quot;,
+        &quot;stdCurrOverdueAmount&quot;: &quot;0&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="_13、经营风险-股权出质"><a href="#_13、经营风险-股权出质" class="header-anchor">#</a> 13、经营风险-股权出质</h2> <ul><li><strong>入口方法：</strong></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span>InterfaceResponse<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> org<span class="token punctuation">.</span>srm<span class="token punctuation">.</span>amkt<span class="token punctuation">.</span>client<span class="token punctuation">.</span>service<span class="token punctuation">.</span>EpRiskService<span class="token function">#doRiskScanExecute</span><span class="token punctuation">(</span>Long organizationId<span class="token punctuation">,</span> EpRiskQueryDTO epRiskQueryDTO<span class="token punctuation">,</span> Constants<span class="token punctuation">.</span>EpRiskInterface epRiskInterface<span class="token punctuation">)</span>
+
+返回结果泛型：不同的接口接收对象不同，参考Constants<span class="token punctuation">.</span>EpRiskInterface中属性dataClassType进行获取
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li><strong>方法参数说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>organizationId</td> <td>Long</td> <td>当前租户id</td></tr> <tr><td>epRiskQueryDTO</td> <td>Object</td> <td>查询参数对象</td></tr> <tr><td>├─  keyWord</td> <td>String</td> <td>检索关键字，必填；示例：中基宁波集团股份有限公司</td></tr> <tr><td>├─ moduleCode</td> <td>String</td> <td>调用模块，必填</td></tr> <tr><td>├─  passport</td> <td>String</td> <td>征信平台为启信宝的时候，取返回链接中的passport，必填</td></tr> <tr><td>epRiskInterface</td> <td>Object</td> <td>接口地址，当前接口固定传 <font color="red">Constants.EpRiskCode.QUERY_EP_RISK_EQUITY_QUALITIES</font>；枚举类型，不同风险项数据的获取，传入的接口地址不同</td></tr></tbody></table> <ul><li><strong>返回字段说明：</strong></li></ul> <table><thead><tr><th>字段</th> <th>类型</th> <th>含义</th></tr></thead> <tbody><tr><td>success</td> <td>Boolean</td> <td>接口调用返回状态:成功｜true, 失败</td></tr> <tr><td>code</td> <td>String</td> <td>响应状态码</td></tr> <tr><td>msg</td> <td>String</td> <td>响应信息</td></tr> <tr><td>data</td> <td>Object</td> <td>响应数据</td></tr> <tr><td>├─ total</td> <td>Number</td> <td>返回列表中记录总数</td></tr> <tr><td>├─ num</td> <td>Number</td> <td>本次调用返回记录数</td></tr> <tr><td>├─ items</td> <td>Array</td> <td>数据列表</td></tr> <tr><td>├─ stdPawnee</td> <td>String</td> <td>质权人</td></tr> <tr><td>├─ stdRemark</td> <td>String</td> <td>备注</td></tr> <tr><td>├─ stdStatus</td> <td>String</td> <td>状态</td></tr> <tr><td>├─ stdDisabled</td> <td>String</td> <td>0：当前公示信息；1：历史公示信息</td></tr> <tr><td>├─ stdNumber</td> <td>String</td> <td>登记编号</td></tr> <tr><td>├─ stdPledgorIdentifyType</td> <td>String</td> <td>出质人类型</td></tr> <tr><td>├─ stdPledgorIdentifyNo</td> <td>String</td> <td>出质企业证照号</td></tr> <tr><td>├─ stdDate</td> <td>String</td> <td>股权出质登记日期</td></tr> <tr><td>├─ stdPledgor</td> <td>String</td> <td>出质人</td></tr> <tr><td>├─ stdPledgorAmount</td> <td>String</td> <td>出质股权数</td></tr> <tr><td>├─ stdSeqNo</td> <td>Integer</td> <td>序号</td></tr> <tr><td>├─ stdPledgorCurrency</td> <td>String</td> <td>出质股权数额币种</td></tr> <tr><td>├─ stdPledgorUnit</td> <td>String</td> <td>出质股权数额单位</td></tr> <tr><td>├─ stdPawneeIdentifyNo</td> <td>String</td> <td>质权企业证照号</td></tr> <tr><td>├─ stdObjectCompany</td> <td>String</td> <td>标的方</td></tr> <tr><td>├─ stdCancelDate</td> <td>String</td> <td>注销日期</td></tr> <tr><td>├─ stdCancelContent</td> <td>String</td> <td>注销原因</td></tr></tbody></table> <ul><li><strong>返回示例：</strong></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;00000&quot;,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;partnerCode&quot;: null,
+  &quot;serviceCode&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 11,
+    &quot;num&quot;: 11,
+    &quot;items&quot;: [
+      {
+        &quot;stdPawnee&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdNumber&quot;: &quot;1020180123&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdDate&quot;: &quot;2018-11-02&quot;,
+        &quot;stdPledgor&quot;: &quot;张朝辉&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;273.08&quot;,
+        &quot;stdSeqNo&quot;: 1,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;913302007111503555（1/1）&quot;,
+        &quot;stdObjectCompany&quot;: &quot;上海卜力国际贸易有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdNumber&quot;: &quot;[2018]第0058号&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;913302065736586519&quot;,
+        &quot;stdDate&quot;: &quot;2018-10-31&quot;,
+        &quot;stdPledgor&quot;: &quot;宁波海越新材料有限公司&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;2400&quot;,
+        &quot;stdSeqNo&quot;: 2,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;913302007111503555&quot;,
+        &quot;stdObjectCompany&quot;: &quot;宁波戚家山化工码头有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdNumber&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;913302065736586519&quot;,
+        &quot;stdDate&quot;: &quot;2017-12-15&quot;,
+        &quot;stdPledgor&quot;: &quot;宁波海越新材料有限公司&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;2400&quot;,
+        &quot;stdSeqNo&quot;: 3,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;913302007111503555&quot;,
+        &quot;stdObjectCompany&quot;: &quot;宁波戚家山化工码头有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdNumber&quot;: &quot;2017-14&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;91330212309012077P&quot;,
+        &quot;stdDate&quot;: &quot;2017-05-05&quot;,
+        &quot;stdPledgor&quot;: &quot;宁波红鼎科技有限公司&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;300&quot;,
+        &quot;stdSeqNo&quot;: 4,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;913302007111503555&quot;,
+        &quot;stdObjectCompany&quot;: &quot;宁波鸿源汽车销售服务有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdNumber&quot;: &quot;2016-80&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;91330212309012077P&quot;,
+        &quot;stdDate&quot;: &quot;2016-11-09&quot;,
+        &quot;stdPledgor&quot;: &quot;宁波红鼎科技有限公司&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;490&quot;,
+        &quot;stdSeqNo&quot;: 5,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;913302007111503555&quot;,
+        &quot;stdObjectCompany&quot;: &quot;宁波鸿源汽车销售服务有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;张建国&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdNumber&quot;: &quot;0481&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdDate&quot;: &quot;2016-05-18&quot;,
+        &quot;stdPledgor&quot;: &quot;徐进华&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;45&quot;,
+        &quot;stdSeqNo&quot;: 6,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdObjectCompany&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;张建国&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;0&quot;,
+        &quot;stdNumber&quot;: &quot;0481&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdDate&quot;: &quot;2014-11-03&quot;,
+        &quot;stdPledgor&quot;: &quot;徐进华&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;45&quot;,
+        &quot;stdSeqNo&quot;: 7,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;-&quot;,
+        &quot;stdObjectCompany&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;张建国&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdNumber&quot;: &quot;0481&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdDate&quot;: &quot;2014-11-02&quot;,
+        &quot;stdPledgor&quot;: &quot;徐进华&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;45&quot;,
+        &quot;stdSeqNo&quot;: 8,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;-&quot;,
+        &quot;stdObjectCompany&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;周芳军&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdNumber&quot;: &quot;0481&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdDate&quot;: &quot;2014-10-28&quot;,
+        &quot;stdPledgor&quot;: &quot;徐进华&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;45&quot;,
+        &quot;stdSeqNo&quot;: 9,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdObjectCompany&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;周芳军&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdNumber&quot;: &quot;0481&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdDate&quot;: &quot;2014-01-14&quot;,
+        &quot;stdPledgor&quot;: &quot;徐进华&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;45&quot;,
+        &quot;stdSeqNo&quot;: 10,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdObjectCompany&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      },
+      {
+        &quot;stdPawnee&quot;: &quot;周芳军&quot;,
+        &quot;stdRemark&quot;: &quot;-&quot;,
+        &quot;stdStatus&quot;: &quot;无效&quot;,
+        &quot;stdDisabled&quot;: &quot;1&quot;,
+        &quot;stdNumber&quot;: &quot;0401&quot;,
+        &quot;stdPledgorIdentifyType&quot;: &quot;-&quot;,
+        &quot;stdPledgorIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdDate&quot;: &quot;2014-01-14&quot;,
+        &quot;stdPledgor&quot;: &quot;徐进华&quot;,
+        &quot;stdPledgorAmount&quot;: &quot;45&quot;,
+        &quot;stdSeqNo&quot;: 11,
+        &quot;stdPledgorCurrency&quot;: &quot;XXX&quot;,
+        &quot;stdPledgorUnit&quot;: &quot;-&quot;,
+        &quot;stdPawneeIdentifyNo&quot;: &quot;非公示项&quot;,
+        &quot;stdObjectCompany&quot;: &quot;中基宁波集团股份有限公司&quot;,
+        &quot;stdCancelDate&quot;: &quot;-&quot;,
+        &quot;stdCancelContent&quot;: &quot;-&quot;
+      }
+    ]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6924542f.js" defer></script><script src="/assets/js/3.7bf0d92c.js" defer></script><script src="/assets/js/77.3971c14f.js" defer></script>
+  </body>
+</html>
